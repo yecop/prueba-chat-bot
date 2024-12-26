@@ -11,7 +11,7 @@ class ChatBotController extends Controller
     {
         $client = new Client();
 
-        $apiKey = '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';
+        $apiKey = env('OPENAI_API_KEY');
         $userMessage = $request->input('message');
 
         try {
